@@ -4,10 +4,10 @@ describe('sample test', () => {
   })
 
   it('displays the resources text', () => {
-    cy.get('h1')
-    .contains('Welcome to my app!');
+    cy.get('h3')
+    .contains('Launching Soon...');
   })
-  it('renders the Netlify logo image', () => {
+  it('renders ses image', () => {
     cy.get('img')
     .should('be.visible')
     .and(($img) => {
