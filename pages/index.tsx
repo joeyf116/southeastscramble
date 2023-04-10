@@ -19,10 +19,10 @@ export default function Home() {
     <>
       <div className="bg-white relative pt-40 pb-20 lg:pt-44 dark:bg-neutral-950">
         <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
-          <h1 className="sm:mx-auto md:w-2/3 font-black text-green-900 text-6xl text-center sm:text-7xl md:text-7xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">
+          <h1 className="sm:mx-auto md:w-2/3 font-black text-green-900 text-5xl text-center sm:text-5xl md:text-5xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">
             <span className={karantina.className}>EBI Rules. Cash Prize.</span>{" "}
-            <br className="lg:block" />{" "}
-            <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-ses-950 to-green-800 dark:from-ses-950 dark:to-green-900">
+            <br className="block" />{" "}
+            <span className="relative text-6xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-ses-950 to-green-800 dark:from-ses-950 dark:to-green-900">
               <span className={`${karantina.className} text-9x1`}>
                 Submission Only
               </span>
