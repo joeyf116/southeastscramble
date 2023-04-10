@@ -1,110 +1,110 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import {
+  BsCalendarEventFill,
+  BsCheckSquare,
+  BsFileRuledFill,
+} from "react-icons/bs";
+import { Karantina } from "next/font/google";
+import { Contrail_One } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const karantina = Karantina({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+});
+
+const contrailOne = Contrail_One({ subsets: ["latin"], weight: ["400"] });
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between p-20 sm:mt-4 lg:mt-0">
-      <title>Southeast Scramble</title>
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Sub Only. EBI Rules.{" "}
-          <button className="bg-ses-950 hover:bg-green-600 text-black font-bold py-2 px-4 border border-ses-950 rounded">
-            Apply to Compete.
-          </button>
-        </p>
+    <>
+      <div className="bg-white relative pt-40 pb-20 lg:pt-44 dark:bg-neutral-950">
+        <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
+          <h1 className="sm:mx-auto md:w-2/3 font-black text-green-900 text-6xl text-center sm:text-7xl md:text-7xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">
+            <span className={karantina.className}>EBI Rules. Cash Prize.</span>{" "}
+            <br className="lg:block" />{" "}
+            <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-ses-950 to-green-800 dark:from-ses-950 dark:to-green-900">
+              <span className={`${karantina.className} text-9x1`}>
+                Submission Only
+              </span>
+            </span>
+            .
+          </h1>
+          <div className="lg:flex">
+            <div className="relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
+              <span className="block font-semibold text-gray-500 dark:text-gray-400">
+                Bringing the top Jiu Jitsu talent in the Southeast.
+              </span>
+              <div className="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">
+                <a
+                  aria-label="Find Upcoming Events"
+                  href="#"
+                  className="p-4 border border-neutral-900/80 dark:bg-neutral-900/80 dark:border-neutral-900/80 rounded-full duration-300 dark:hover:border-ses-950 shadow-lg dark:hover:shadow-ses-950/20 dark:border-ses-950/30"
+                >
+                  <div className="flex justify-center space-x-4">
+                    <BsCalendarEventFill
+                      className="w-6 h-6"
+                      width="128"
+                      height="128"
+                      color="white"
+                    />
+                    <span className={"font-medium dark:text-white"}>
+                      Events
+                    </span>
+                  </div>
+                </a>
+                <a
+                  aria-label="add to chat"
+                  href="#"
+                  className="p-4 border border-neutral-900/80 dark:bg-neutral-900/80 dark:border-neutral-900/80 rounded-full duration-300 dark:hover:border-ses-950 shadow-lg dark:hover:shadow-ses-950/20 dark:border-ses-950/30"
+                >
+                  <div className="flex justify-center space-x-4">
+                    <BsFileRuledFill
+                      className="w-6 h-6"
+                      width="128"
+                      height="128"
+                    />
+                    <span className="font-medium dark:text-white">Rules</span>
+                  </div>
+                </a>
+                <a
+                  aria-label="add to zoom"
+                  href="#"
+                  className="p-4 border border-neutral-900/80 dark:bg-neutral-900/80 dark:border-neutral-900/80 rounded-full duration-300 dark:hover:border-ses-950 shadow-lg dark:hover:shadow-ses-950/20 dark:border-ses-950/30"
+                >
+                  <div className="flex justify-center space-x-4">
+                    <BsCheckSquare
+                      className="w-6 h-6"
+                      width="128"
+                      height="128"
+                      color="white"
+                    />
+                    <span className="font-medium dark:text-white">Apply</span>
+                  </div>
+                </a>
+              </div>
+
+              <div className="pt-12 flex gap-6 lg:gap-12 justify-between grayscale lg:w-2/3">
+                <Image src="/SVG/10pgvl.svg" width={50} height={50} alt="" />
+                <Image src="/SVG/10pgvl.svg" width={50} height={50} alt="" />
+                <Image src="/SVG/10pgvl.svg" width={50} height={50} alt="" />
+                <Image src="/SVG/10pgvl.svg" width={50} height={50} alt="" />
+              </div>
+            </div>
+            <div className="mt-12 md:mt-0 lg:absolute -right-10 lg:w-7/12">
+              <div className="relative w-full">
+                <Image
+                  src="/SVG/HorizontalTextDark.svg"
+                  className="relative w-full invert"
+                  alt="wath illustration"
+                  loading="lazy"
+                  width="100"
+                  height="100"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative"
-          src="/SVG/MultiColorVerticalLogoFull.svg"
-          alt="Southeast Scramble Logo"
-          width={400}
-          height={50}
-          priority
-        />
-      </div>
-
-      <div className="mt-2 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://southeastscramble.com"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Events{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Upcoming Event Information.
-          </p>
-        </a>
-
-        <a
-          href="https://submissionchallenge.smoothcomp.com/en/rules"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            EBI Ruleset{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            EBI Result & FAQ.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Our Sponsors{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Thanks to our Sponsors, we are able to bring cash prizes to our
-            Athletes.
-          </p>
-        </a>
-
-        <a
-          href="https://shop10pgvl.com/"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Shop{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Check out our shop for the latest SES Gear!
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }
