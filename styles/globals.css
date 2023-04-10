@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+svg {
+  -webkit-transform: translate(0px, 0px); /* Safari and Chrome */
+}

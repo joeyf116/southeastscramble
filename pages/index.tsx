@@ -93,11 +93,11 @@ export default function Home() {
             <div className="mt-12 md:mt-0 lg:absolute -right-10 lg:w-7/12">
               <div className="relative w-full">
                 <Image
-                  src="/SVG/HorizontalTextDark.svg"
+                  src="/images/scrambleiphoneAsset2x.png"
                   className="relative w-full invert"
                   alt="wath illustration"
-                  width="50"
-                  height="50"
+                  width="500"
+                  height="500"
                 />
               </div>
             </div>
