@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from '@components/Header'
+import CenteredHero from '@components/CenteredHero'
 import Footer from '@components/Footer'
 
 export default function Home() {
@@ -11,10 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="SOUTHEAST SCRAMBLE" />
-        <p className="description">
-          Launching Soon..
-        </p>
+        <CenteredHero title={"Southeast Scramble"} />
       </main>
 
       <Footer />
