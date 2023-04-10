@@ -96,9 +96,8 @@ export default function Home() {
                   src="/SVG/HorizontalTextDark.svg"
                   className="relative w-full invert"
                   alt="wath illustration"
-                  loading="lazy"
-                  width="100"
-                  height="100"
+                  width="50"
+                  height="50"
                 />
               </div>
             </div>
