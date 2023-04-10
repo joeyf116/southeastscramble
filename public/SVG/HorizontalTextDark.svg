@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325.45 103.51">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .01em;
+      }
+
+      .cls-2 {
+        font-size: 7.88px;
+        letter-spacing: .6em;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: ContrailOne-Regular, 'Contrail One';
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        font-size: 12px;
+        letter-spacing: .8em;
+      }
+
+      .cls-5 {
+        letter-spacing: .01em;
+      }
+
+      .cls-6 {
+        font-family: Karantina-Regular, Karantina;
+        font-size: 86.4px;
+      }
+
+      .cls-7 {
+        letter-spacing: .02em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-3" transform="translate(104.63 10.1)"><tspan x="0" y="0">SOUTHEAST</tspan></text>
+      <text class="cls-6" transform="translate(100.39 82.33)"><tspan class="cls-1" x="0" y="0">SC</tspan><tspan class="cls-7" x="52.35" y="0">R</tspan><tspan class="cls-5" x="80.52" y="0">AMB</tspan><tspan class="cls-4" x="175.81" y="0">L</tspan><tspan class="cls-1" x="200.87" y="0">E</tspan></text>
+      <text class="cls-2" transform="translate(104.63 101.11)"><tspan x="0" y="0">SUB ONLY SUPERFIGHTS</tspan></text>
+      <path d="m44.62,0L0,25.76v51.52l44.62,25.76,44.62-25.76V25.76L44.62,0Zm22.64,81.35v-10.21l5.68-3.28v-6.08L22.62,31.52l-6.31,3.65v5.66l41.72,25.09v20.76l-13.41,7.74L7.46,72.97v-16.42l8.84,5.32v6l28.32,16.35,3.95-2.28v-10.37l-32.27-19.4v.07l-8.84-5.32v-16.85L44.62,8.61l37.16,21.45v15.97l-9.2-5.53.36-5.33-28.32-16.35-12.39,7.15,39.72,23.8v-.02s9.83,5.91,9.83,5.91v17.3l-14.52,8.38Z"/>
+    </g>
+  </g>
+</svg>
