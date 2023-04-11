@@ -10,11 +10,15 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Southeast Scramble</title>
         <meta name="title" content="Southeast Scramble" />
         <meta name="description" content="Sub Only. EBI Rules." />
+        <meta
+          property="image"
+          content="https://southeastscramble.com/images/MultiColorS_48.png"
+        />
         <meta property="og:title" content="Southeast Scramble" />
         <meta property="og:description" content="Sub Only. EBI Rules." />
         <meta
           property="og:image"
-          content="https://southeastscramble.com/images/spinnerAsset5_32.png"
+          content="https://southeastscramble.com/images/MultiColorS_48.png"
         />
       </Head>
       <Component {...pageProps} />

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Karantina } from "next/font/google";
 import { Contrail_One } from "next/font/google";
+import Link from "next/link";
 
 const karantina = Karantina({
   subsets: ["latin"],
@@ -47,7 +48,7 @@ export default function Home() {
                     <span className={"font-medium text-white"}>Events</span>
                   </div>
                 </a>
-                <a
+                <Link
                   aria-label="EBI Ruleset"
                   href="/rules"
                   className="rounded-full border border-ses-950/50 bg-neutral-800/80 p-4 shadow-lg duration-300 hover:border-ses-950 hover:shadow-ses-950/20"
@@ -62,7 +63,7 @@ export default function Home() {
                     />
                     <span className="font-medium text-white">Rules</span>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="flex justify-between gap-6 pt-12 grayscale lg:w-2/3 lg:gap-12">
@@ -76,7 +77,7 @@ export default function Home() {
                 </a>
                 <a href="https://www.misunderstoodmutt.com/" target="_blank">
                   <Image
-                    src="/SVG/brand/mutt.svg"
+                    src="/SVG/brand/misunderstoodmutt.svg"
                     width={70}
                     height={70}
                     alt="Misunderstood Mutt Virtual Dog Training"
