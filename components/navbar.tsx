@@ -6,7 +6,7 @@ export const Navbar = (): JSX.Element => {
   const [hidden, setHidden] = useState<boolean>(true);
 
   return (
-    <nav className="navbar background-blur peer-checked:navbar-active fixed z-20 w-full border-neutral-900 bg-neutral-900/80 text-white">
+    <nav className="navbar background-blur peer-checked:navbar-active fixed z-20 w-full border-neutral-950 bg-neutral-950/80 text-white">
       <div className="m-auto px-6 xl:container md:px-12 lg:px-4">
         <div className="flex flex-wrap items-center justify-between gap-6 md:gap-0 md:py-3 lg:py-5">
           <div className="flex w-full items-center justify-between lg:w-auto">
@@ -78,32 +78,38 @@ export const Navbar = (): JSX.Element => {
                 <li>
                   <hr />
                 </li>
-                <li className="flex justify-center space-x-6">
-                  <a
-                    target="_blank"
-                    href="https://www.instagram.com/sessubonly/"
-                  >
-                    <Image
-                      src="/SVG/icons/instagram-icon.svg"
-                      alt="Southeast Scramble instagram"
-                      width={23}
-                      height={23}
-                      className="hover:scale-110"
-                    />
-                  </a>
-                  <a
-                    href="https://www.youtube.com/@SESSubOnly/featured"
-                    target="_blank"
-                  >
-                    <Image
-                      src="/SVG/icons/youtube-icon.svg"
-                      alt="Southeast Scramble Youtube Channel"
-                      width={23}
-                      height={23}
-                      className="hover:scale-110"
-                    />
-                  </a>
-                </li>
+                <div className="flex space-x-6 md:space-x-0">
+                  <li className="space-x-6">
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/sessubonly/"
+                      className="text-primary block transition hover:font-bold hover:text-ses-950 md:px-4"
+                    >
+                      <Image
+                        src="/SVG/icons/instagram-icon.svg"
+                        alt="Southeast Scramble instagram"
+                        width={23}
+                        height={23}
+                        className="hover:scale-110"
+                      />
+                    </a>
+                  </li>
+                  <li className="sm:space-x-6">
+                    <a
+                      href="https://www.youtube.com/@SESSubOnly/featured"
+                      target="_blank"
+                      className="text-primary block transition hover:font-bold hover:text-ses-950 md:px-4"
+                    >
+                      <Image
+                        src="/SVG/icons/youtube-icon.svg"
+                        alt="Southeast Scramble Youtube Channel"
+                        width={23}
+                        height={23}
+                        className="hover:scale-110"
+                      />
+                    </a>
+                  </li>
+                </div>
               </ul>
             </div>
           </div>

@@ -12,7 +12,7 @@ const contrailOne = Contrail_One({ subsets: ["latin"], weight: ["400"] });
 export default function Home() {
   return (
     <>
-      <div className="relative bg-neutral-950 pb-20 pt-40 lg:pt-44">
+      <div className="relative bg-neutral-900 pb-20 pt-40 lg:pt-44">
         <div className="relative m-auto px-6 xl:container md:px-12 lg:px-6">
           <h1 className="text-center text-5xl font-black text-white sm:mx-auto sm:text-5xl md:w-2/3 md:text-5xl lg:w-auto lg:text-left xl:text-7xl">
             <span className={karantina.className}>EBI Rules. Cash Prize.</span>{" "}
@@ -33,7 +33,7 @@ export default function Home() {
                 <a
                   aria-label="Find Upcoming Events"
                   href="/events"
-                  className="rounded-full border border-neutral-900/80 border-ses-950/30 bg-neutral-900/80 p-4 shadow-lg duration-300 hover:border-ses-950 hover:shadow-ses-950/20"
+                  className="rounded-full border border-ses-950/50 bg-neutral-800/80 p-4 shadow-lg duration-300 hover:border-ses-950 hover:shadow-ses-950/20"
                 >
                   <div className="flex justify-center space-x-4">
                     <Image
@@ -48,9 +48,9 @@ export default function Home() {
                   </div>
                 </a>
                 <a
-                  aria-label="add to chat"
+                  aria-label="EBI Ruleset"
                   href="/rules"
-                  className="rounded-full border border-neutral-900/80 border-ses-950/30 bg-neutral-900/80 p-4 shadow-lg duration-300 hover:border-ses-950 hover:shadow-ses-950/20"
+                  className="rounded-full border border-ses-950/50 bg-neutral-800/80 p-4 shadow-lg duration-300 hover:border-ses-950 hover:shadow-ses-950/20"
                 >
                   <div className="flex justify-center space-x-4">
                     <Image
