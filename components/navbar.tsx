@@ -7,7 +7,7 @@ export const Navbar = (): JSX.Element => {
 
   return (
     <nav className="navbar background-blur peer-checked:navbar-active fixed z-20 w-full border-neutral-900 bg-neutral-900/80 text-white">
-      <div className="m-auto px-6 xl:container md:px-12 lg:px-6">
+      <div className="m-auto px-6 xl:container md:px-12 lg:px-4">
         <div className="flex flex-wrap items-center justify-between gap-6 md:gap-0 md:py-3 lg:py-5">
           <div className="flex w-full items-center justify-between lg:w-auto">
             <Link
@@ -48,7 +48,7 @@ export const Navbar = (): JSX.Element => {
               hidden ? "hidden" : ""
             } w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border border-neutral-600 border-neutral-700 bg-neutral-800 bg-neutral-800 p-6 shadow-2xl shadow-neutral-800/20 dark:shadow-none md:flex-nowrap lg:m-0 lg:flex lg:w-7/12 lg:space-y-0 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none`}
           >
-            <div className="text-gray-300 lg:pr-4">
+            <div className="text-gray-300">
               <ul className="lg:text-md space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0">
                 <li>
                   <Link
@@ -74,6 +74,35 @@ export const Navbar = (): JSX.Element => {
                   >
                     <span>Shop</span>
                   </Link>
+                </li>
+                <li>
+                  <hr />
+                </li>
+                <li className="flex justify-center space-x-6">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/sessubonly/"
+                  >
+                    <Image
+                      src="/SVG/icons/instagram-icon.svg"
+                      alt="Southeast Scramble instagram"
+                      width={23}
+                      height={23}
+                      className="hover:scale-110"
+                    />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@SESSubOnly/featured"
+                    target="_blank"
+                  >
+                    <Image
+                      src="/SVG/icons/youtube-icon.svg"
+                      alt="Southeast Scramble Youtube Channel"
+                      width={23}
+                      height={23}
+                      className="hover:scale-110"
+                    />
+                  </a>
                 </li>
               </ul>
             </div>
