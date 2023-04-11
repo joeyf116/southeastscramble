@@ -1,9 +1,4 @@
 import Image from "next/image";
-import {
-  BsCalendarEventFill,
-  BsCheckSquare,
-  BsFileRuledFill,
-} from "react-icons/bs";
 import { Karantina } from "next/font/google";
 import { Contrail_One } from "next/font/google";
 

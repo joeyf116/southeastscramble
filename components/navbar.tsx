@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -9,7 +10,7 @@ export const Navbar = (): JSX.Element => {
       <div className="m-auto px-6 xl:container md:px-12 lg:px-6">
         <div className="flex flex-wrap items-center justify-between gap-6 md:gap-0 md:py-3 lg:py-5">
           <div className="flex w-full items-center justify-between lg:w-auto">
-            <a
+            <Link
               className="relative z-10 w-full"
               href="/"
               aria-label="SES logo, click to homepage"
@@ -20,7 +21,7 @@ export const Navbar = (): JSX.Element => {
                 height={40}
                 width={40}
               />
-            </a>
+            </Link>
             <div>
               <label
                 htmlFor="hbr"
@@ -50,29 +51,29 @@ export const Navbar = (): JSX.Element => {
             <div className="text-gray-300 lg:pr-4">
               <ul className="lg:text-md space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0">
                 <li>
-                  <a
+                  <Link
                     href="/events"
                     className="text-primary block transition hover:font-bold hover:text-ses-950 md:px-4"
                   >
                     <span>Events</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/rules"
                     className="text-primary block transition hover:font-bold hover:text-ses-950 md:px-4"
                   >
                     <span>Rules</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="https://shop10pgvl.com/"
                     target="_blank"
                     className="text-primary block transition hover:font-bold hover:text-ses-950 md:px-4"
                   >
                     <span>Shop</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
