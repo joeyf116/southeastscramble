@@ -17,12 +17,12 @@ const contrailOne = Contrail_One({ subsets: ["latin"], weight: ["400"] });
 export default function Home() {
   return (
     <>
-      <div className="bg-white relative pt-40 pb-20 lg:pt-44 dark:bg-neutral-950">
-        <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
-          <h1 className="sm:mx-auto md:w-2/3 font-black text-green-900 text-5xl text-center sm:text-5xl md:text-5xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">
+      <div className="relative bg-neutral-950 pb-20 pt-40 lg:pt-44">
+        <div className="relative m-auto px-6 xl:container md:px-12 lg:px-6">
+          <h1 className="text-center text-5xl font-black text-white sm:mx-auto sm:text-5xl md:w-2/3 md:text-5xl lg:w-auto lg:text-left xl:text-7xl">
             <span className={karantina.className}>EBI Rules. Cash Prize.</span>{" "}
             <br className="block" />{" "}
-            <span className="relative text-6xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-ses-950 to-green-800 dark:from-ses-950 dark:to-green-900">
+            <span className="relative bg-gradient-to-r from-ses-950 to-green-800 bg-clip-text text-6xl text-transparent dark:from-ses-950 dark:to-green-900 lg:text-8xl">
               <span className={`${karantina.className} text-9x1`}>
                 Submission Only
               </span>
@@ -30,67 +30,86 @@ export default function Home() {
             .
           </h1>
           <div className="lg:flex">
-            <div className="relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
+            <div className="relative mt-8 space-y-8 text-center sm:mx-auto sm:w-10/12 md:mt-16 md:w-2/3 lg:ml-0 lg:mr-auto lg:w-7/12 lg:text-left">
               <span className="block font-semibold text-gray-500 dark:text-gray-400">
                 Bringing the top Jiu Jitsu talent in the Southeast.
               </span>
-              <div className="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">
+              <div className="grid grid-cols-2 space-x-4 md:flex md:justify-center md:space-x-4 lg:justify-start">
                 <a
                   aria-label="Find Upcoming Events"
-                  href="#"
-                  className="p-4 border border-neutral-900/80 dark:bg-neutral-900/80 dark:border-neutral-900/80 rounded-full duration-300 dark:hover:border-ses-950 shadow-lg dark:hover:shadow-ses-950/20 dark:border-ses-950/30"
+                  href="/events"
+                  className="rounded-full border border-neutral-900/80 border-ses-950/30 bg-neutral-900/80 p-4 shadow-lg duration-300 hover:border-ses-950 hover:shadow-ses-950/20"
                 >
                   <div className="flex justify-center space-x-4">
-                    <BsCalendarEventFill
-                      className="w-6 h-6"
+                    <Image
+                      alt="Training Mat"
+                      src={"/SVG/icons/training-mat.svg"}
+                      className="h-6 w-6"
                       width="128"
                       height="128"
                       color="white"
                     />
-                    <span className={"font-medium dark:text-white"}>
-                      Events
-                    </span>
+                    <span className={"font-medium text-white"}>Events</span>
                   </div>
                 </a>
                 <a
                   aria-label="add to chat"
-                  href="#"
-                  className="p-4 border border-neutral-900/80 dark:bg-neutral-900/80 dark:border-neutral-900/80 rounded-full duration-300 dark:hover:border-ses-950 shadow-lg dark:hover:shadow-ses-950/20 dark:border-ses-950/30"
+                  href="/rules"
+                  className="rounded-full border border-neutral-900/80 border-ses-950/30 bg-neutral-900/80 p-4 shadow-lg duration-300 hover:border-ses-950 hover:shadow-ses-950/20"
                 >
                   <div className="flex justify-center space-x-4">
-                    <BsFileRuledFill
-                      className="w-6 h-6"
+                    <Image
+                      src={"/SVG/icons/referee-icon.svg"}
+                      alt="Referee Icon"
+                      className="h-6 w-6"
                       width="128"
                       height="128"
                     />
-                    <span className="font-medium dark:text-white">Rules</span>
-                  </div>
-                </a>
-                <a
-                  aria-label="add to zoom"
-                  href="#"
-                  className="p-4 border border-neutral-900/80 dark:bg-neutral-900/80 dark:border-neutral-900/80 rounded-full duration-300 dark:hover:border-ses-950 shadow-lg dark:hover:shadow-ses-950/20 dark:border-ses-950/30"
-                >
-                  <div className="flex justify-center space-x-4">
-                    <BsCheckSquare
-                      className="w-6 h-6"
-                      width="128"
-                      height="128"
-                      color="white"
-                    />
-                    <span className="font-medium dark:text-white">Apply</span>
+                    <span className="font-medium text-white">Rules</span>
                   </div>
                 </a>
               </div>
 
-              <div className="pt-12 flex gap-6 lg:gap-12 justify-between grayscale lg:w-2/3">
-                <Image src="/SVG/10pgvl.svg" width={50} height={50} alt="" />
-                <Image src="/SVG/10pgvl.svg" width={50} height={50} alt="" />
-                <Image src="/SVG/10pgvl.svg" width={50} height={50} alt="" />
-                <Image src="/SVG/10pgvl.svg" width={50} height={50} alt="" />
+              <div className="flex justify-between gap-6 pt-12 grayscale lg:w-2/3 lg:gap-12">
+                <a href="https://www.10thplanetgreenville.com/" target="_blank">
+                  <Image
+                    src="/SVG/brand/10pgvl.svg"
+                    width={70}
+                    height={70}
+                    alt="10th Planet Greenville Jiu Jitsu"
+                  />
+                </a>
+                <a href="https://www.misunderstoodmutt.com/" target="_blank">
+                  <Image
+                    src="/SVG/brand/mutt.svg"
+                    width={70}
+                    height={70}
+                    alt="Misunderstood Mutt Virtual Dog Training"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/kylie_renee_photography_/"
+                  target="_blank"
+                >
+                  <Image
+                    className="invert"
+                    src="/SVG/brand/kyliephotography.svg"
+                    width={80}
+                    height={80}
+                    alt="Kylie Renee Photography"
+                  />
+                </a>
+                <a href="https://mikeruttan.webflow.io/" target="_blank">
+                  <Image
+                    src="/SVG/brand/MR-Wht.svg"
+                    width={70}
+                    height={70}
+                    alt="Mike Ruttan Design"
+                  />
+                </a>
               </div>
             </div>
-            <div className="mt-12 md:mt-0 lg:absolute -right-10 lg:w-7/12">
+            <div className="-right-10 mt-12 md:mt-0 lg:absolute lg:w-7/12">
               <div className="relative w-full">
                 <Image
                   src="/images/scrambleiphoneAsset2x.png"
