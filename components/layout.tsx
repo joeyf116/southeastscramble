@@ -5,7 +5,7 @@ export default function Layout({ children }: any) {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main className="flex min-h-screen flex-col">{children}</main>
       <Footer />
     </>
   );
