@@ -26,7 +26,7 @@ export default function Home() {
             .
           </h1>
           <div className="lg:flex">
-            <div className="relative mt-8 space-y-8 text-center sm:mx-auto sm:w-10/12 md:mt-16 md:w-2/3 lg:ml-0 lg:mr-auto lg:w-7/12 lg:text-left">
+            <div className="relative mt-6 space-y-8 text-center sm:mx-auto sm:w-10/12 md:mt-6 md:w-2/3 lg:ml-0 lg:mr-auto lg:w-7/12 lg:text-left">
               <span className="block font-semibold text-gray-500 dark:text-gray-400">
                 Bringing the top Jiu Jitsu talent in the Southeast.
               </span>

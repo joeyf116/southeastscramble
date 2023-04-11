@@ -6,7 +6,7 @@ export const Navbar = (): JSX.Element => {
   const [hidden, setHidden] = useState<boolean>(true);
 
   return (
-    <nav className="navbar background-blur peer-checked:navbar-active fixed z-20 w-full border-neutral-950 bg-neutral-950/80 text-white">
+    <nav className="navbar background-blur peer-checked:navbar-active fixed z-20 w-full items-center border-neutral-950 bg-neutral-950/80 text-white">
       <div className="m-auto px-6 xl:container md:px-12 lg:px-4">
         <div className="flex flex-wrap items-center justify-between gap-6 md:gap-0 md:py-3 lg:py-5">
           <div className="flex w-full items-center justify-between lg:w-auto">
@@ -46,10 +46,20 @@ export const Navbar = (): JSX.Element => {
           <div
             className={`navmenu mb-16 ${
               hidden ? "hidden" : ""
-            } w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border border-neutral-600 border-neutral-700 bg-neutral-800 bg-neutral-800 p-6 shadow-2xl shadow-neutral-800/20 dark:shadow-none md:flex-nowrap lg:m-0 lg:flex lg:w-7/12 lg:space-y-0 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none`}
+            } w-full flex-wrap content-center items-center justify-end space-y-8 rounded-3xl border border-neutral-600 border-neutral-700 bg-neutral-800 bg-neutral-800 p-6 shadow-2xl shadow-neutral-800/20 dark:shadow-none md:flex-nowrap lg:m-0 lg:flex lg:w-7/12 lg:space-y-0 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none`}
           >
             <div className="text-gray-300">
-              <ul className="lg:text-md space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0">
+              <ul className="lg:text-md items-center space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0">
+                <li className="align-center">
+                  <Link aria-label="EBI Ruleset" href="/apply" className="">
+                    <button
+                      type="button"
+                      className="rounded-lg bg-ses-950/50 px-5 py-2.5 text-sm font-medium text-white hover:bg-ses-950/30 focus:outline-none focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                    >
+                      Apply to Compete
+                    </button>
+                  </Link>
+                </li>
                 <li>
                   <Link
                     href="/events"
