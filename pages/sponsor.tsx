@@ -31,12 +31,12 @@ export default function Sponsor() {
       </div>
 
       <Image
-        alt="Violin"
+        alt="SES Staff"
         src="/images/sesStaff.jpg"
         className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-tl-[30px] md:h-[calc(100%_-_4rem)] md:rounded-tl-[60px]"
-        width={1000}
-        height={1000}
-        loading="eager"
+        width={500}
+        height={500}
+        loading="lazy"
       />
     </section>
   );
