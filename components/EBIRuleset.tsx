@@ -12,7 +12,8 @@ export const EbiRuleset = (): JSX.Element => {
           <span className="text-white">)</span>
         </em>
       </h2>
-      <div>
+      <hr className="sm:hidden mt-2"/>
+      <div className="pt-2">
         <h3 className="mt-2 text-2xl font-bold tracking-tight">Format</h3>
         <ul className="leading-1 max-w-xl list-disc text-base leading-7 lg:max-w-lg">
           <li>No points, no judges, submission only</li>
