@@ -50,8 +50,13 @@ export const Navbar = (): JSX.Element => {
           >
             <div className="text-gray-300">
               <ul className="lg:text-md items-center space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0">
-                <li className="align-center">
-                  <Link aria-label="EBI Ruleset" href="/apply" className="">
+                <li className="text-center">
+                  <Link
+                    aria-label="EBI Ruleset"
+                    href="/apply"
+                    className=""
+                    onClick={() => setHidden(true)}
+                  >
                     <button
                       type="button"
                       className="rounded-lg bg-ses-950/50 px-5 py-2.5 text-sm font-medium text-white hover:bg-ses-950/30 focus:outline-none focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
@@ -62,18 +67,38 @@ export const Navbar = (): JSX.Element => {
                 </li>
                 <li>
                   <Link
-                    href="/events"
+                    href="/"
                     className="text-primary block transition hover:font-bold hover:text-ses-950 md:px-4"
+                    onClick={() => setHidden(true)}
                   >
-                    <span>Events</span>
+                    <span>Home</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/about"
+                    className="text-primary block transition hover:font-bold hover:text-ses-950 md:px-4"
+                    onClick={() => setHidden(true)}
+                  >
+                    <span>About</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/rules"
                     className="text-primary block transition hover:font-bold hover:text-ses-950 md:px-4"
+                    onClick={() => setHidden(true)}
                   >
                     <span>Rules</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/sponsor"
+                    className="text-primary block transition hover:font-bold hover:text-ses-950 md:px-4"
+                    onClick={() => setHidden(true)}
+                  >
+                    <span>Sponsor</span>
                   </Link>
                 </li>
                 <li>
@@ -81,6 +106,7 @@ export const Navbar = (): JSX.Element => {
                     href="https://shop10pgvl.com/"
                     target="_blank"
                     className="text-primary block transition hover:font-bold hover:text-ses-950 md:px-4"
+                    onClick={() => setHidden(true)}
                   >
                     <span>Shop</span>
                   </Link>

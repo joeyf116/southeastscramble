@@ -10,6 +10,7 @@ export default function Apply() {
         alt="SES Superfight Logo"
         className="invert"
       />
+      <hr className="sm:hidden mt-2" />
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSc2JsrEzrCH0NI4RIWPOfLve0x9TyuFZfyzi2RlAGHuYmWDzQ/viewform?embedded=true"
         width="350px"

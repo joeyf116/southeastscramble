@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Karantina } from "next/font/google";
 import { Contrail_One } from "next/font/google";
 import Link from "next/link";
+import HeaderHero from "@/components/headerHero";
 
 const karantina = Karantina({
   subsets: ["latin"],
@@ -30,41 +31,7 @@ export default function Home() {
               <span className="block font-semibold text-gray-500 dark:text-gray-400">
                 Bringing the top Jiu Jitsu talent in the Southeast.
               </span>
-              <div className="grid grid-cols-2 space-x-4 md:flex md:justify-center md:space-x-4 lg:justify-start">
-                <a
-                  aria-label="Find Upcoming Events"
-                  href="/events"
-                  className="rounded-full border border-ses-950/50 bg-neutral-800/80 p-4 shadow-lg duration-300 hover:border-ses-950 hover:shadow-ses-950/20"
-                >
-                  <div className="flex justify-center space-x-4">
-                    <Image
-                      alt="Training Mat"
-                      src={"/SVG/icons/training-mat.svg"}
-                      className="h-6 w-6"
-                      width="128"
-                      height="128"
-                      color="white"
-                    />
-                    <span className={"font-medium text-white"}>Events</span>
-                  </div>
-                </a>
-                <Link
-                  aria-label="EBI Ruleset"
-                  href="/rules"
-                  className="rounded-full border border-ses-950/50 bg-neutral-800/80 p-4 shadow-lg duration-300 hover:border-ses-950 hover:shadow-ses-950/20"
-                >
-                  <div className="flex justify-center space-x-4">
-                    <Image
-                      src={"/SVG/icons/referee-icon.svg"}
-                      alt="Referee Icon"
-                      className="h-6 w-6"
-                      width="128"
-                      height="128"
-                    />
-                    <span className="font-medium text-white">Rules</span>
-                  </div>
-                </Link>
-              </div>
+              <HeaderHero />
 
               <div className="flex justify-between gap-6 pt-12 grayscale lg:w-2/3 lg:gap-12">
                 <a href="https://www.10thplanetgreenville.com/" target="_blank">
