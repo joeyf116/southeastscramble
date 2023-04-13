@@ -1,5 +1,5 @@
 import { karantina } from "@/components/utils/googlefonts";
-import { IoMailOutline } from "react-icons/io5";
+import Image from "next/image";
 
 export default function Sponsor() {
   return (
@@ -30,10 +30,13 @@ export default function Sponsor() {
         </div>
       </div>
 
-      <img
+      <Image
         alt="Violin"
         src="/images/sesStaff.jpg"
         className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-tl-[30px] md:h-[calc(100%_-_4rem)] md:rounded-tl-[60px]"
+        width={1000}
+        height={1000}
+        loading="eager"
       />
     </section>
   );
