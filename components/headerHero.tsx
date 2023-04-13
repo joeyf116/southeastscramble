@@ -20,11 +20,11 @@ const HeaderHero = () => {
                 </button> */}
                 {/* Code block for indigo grey button ends */}
                 {/* Code block for button with indigo outline starts */}
-                <Link href="/apply">
+                <a href="https://forms.gle/KP28oeBmv4c7uhrNA" target="_blank">
                   <button className="mx-2 my-2 rounded border border-black bg-white px-6 py-2 text-3xl text-black transition duration-150 ease-in-out hover:border-neutral-950 hover:bg-ses-950 hover:text-neutral-950">
                     Athlete Application
                   </button>
-                </Link>
+                </a>
                 {/* Code block for button with indigo outline ends */}
               </div>
             </div>

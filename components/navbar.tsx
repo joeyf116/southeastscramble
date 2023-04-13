@@ -51,11 +51,12 @@ export const Navbar = (): JSX.Element => {
             <div className="text-gray-300">
               <ul className="lg:text-md items-center space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0">
                 <li className="text-center">
-                  <Link
+                  <a
                     aria-label="EBI Ruleset"
-                    href="/apply"
+                    href="https://forms.gle/KP28oeBmv4c7uhrNA"
                     className=""
                     onClick={() => setHidden(true)}
+                    target="_blank"
                   >
                     <button
                       type="button"
@@ -63,7 +64,7 @@ export const Navbar = (): JSX.Element => {
                     >
                       Apply to Compete
                     </button>
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <Link
