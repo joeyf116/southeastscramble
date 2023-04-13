@@ -2,8 +2,9 @@ import Image from "next/image";
 
 export const Footer = (): JSX.Element => {
   return (
-    <footer className="bg-neutral mt-auto rounded-lg shadow">
-      <div className="border-neutral flex flex-col-reverse items-start justify-between border-t pt-8 lg:flex-row lg:items-center lg:p-12">
+    <footer className="bg-neutral-900 mt-auto shadow">
+      <hr className="border-top-white"/>
+      <div className="flex flex-col-reverse items-start justify-between pt-8 lg:flex-row lg:items-center lg:p-12">
         <p className="m-4 text-gray-500">
           © 2023{" "}
           <a href="https://flowbite.com/" className="hover:underline">

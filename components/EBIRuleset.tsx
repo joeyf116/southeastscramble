@@ -2,9 +2,9 @@ import { karantina } from "./utils/googlefonts";
 
 export const EbiRuleset = (): JSX.Element => {
   return (
-    <div className="p-4">
+    <div className="p-4 text-white">
       <h2 className={karantina.className}>
-        <span className="mt-2 text-7xl font-bold tracking-tight sm:text-7xl">
+        <span className="mt-2 text-center text-7xl font-bold tracking-tight">
           SES Ruleset{" "}
         </span>
         <em className="text-2xl">
@@ -12,9 +12,11 @@ export const EbiRuleset = (): JSX.Element => {
           <span className="text-white">)</span>
         </em>
       </h2>
-      <hr className="sm:hidden mt-2"/>
+      <hr className="mt-2 sm:hidden" />
       <div className="pt-2">
-        <h3 className="mt-2 text-2xl font-bold tracking-tight">Format</h3>
+        <h3 className="mt-2 text-center text-2xl font-bold tracking-tight sm:text-left">
+          Format
+        </h3>
         <ul className="leading-1 max-w-xl list-disc text-base leading-7 lg:max-w-lg">
           <li>No points, no judges, submission only</li>
           <li>All submissions are legal.</li>
@@ -24,7 +26,7 @@ export const EbiRuleset = (): JSX.Element => {
       </div>
 
       <div>
-        <h3 className="mt-2 text-2xl font-bold tracking-tight">
+        <h3 className="mt-2 text-center text-2xl font-bold tracking-tight sm:text-left">
           The “Get Down” Rule
         </h3>
         <ul className="leading-1 max-w-xl list-disc text-base leading-7 lg:max-w-lg">
@@ -50,7 +52,7 @@ export const EbiRuleset = (): JSX.Element => {
       </div>
 
       <div>
-        <h3 className="mt-2 text-2xl font-bold tracking-tight">
+        <h3 className="mt-2 text-center text-2xl font-bold tracking-tight sm:text-left">
           Stalling Penalty
         </h3>
         <ul className="max-w-xl list-disc text-sm leading-6 lg:max-w-lg">
@@ -73,8 +75,8 @@ export const EbiRuleset = (): JSX.Element => {
       </div>
 
       <div>
-        <h3 className="mt-2 text-2xl font-bold tracking-tight">
-          Overtime (1 round minimum/3 rounds maximum)
+        <h3 className="mt-2 text-center text-2xl font-bold tracking-tight sm:text-left">
+          Overtime
         </h3>
         <p className="max-w-xl text-sm leading-6 lg:max-w-lg">
           If there is no submission after the regulation time limit, each
@@ -84,7 +86,7 @@ export const EbiRuleset = (): JSX.Element => {
           starting on offense or defense.
         </p>
 
-        <h3 className="mt-2 text-2xl font-bold tracking-tight">
+        <h3 className="mt-2 text-center text-2xl font-bold tracking-tight sm:text-left">
           How to win in overtime
         </h3>
         <ul className="max-w-xl list-disc text-sm leading-6 lg:max-w-lg">
@@ -102,7 +104,7 @@ export const EbiRuleset = (): JSX.Element => {
           match.
         </p>
 
-        <h3 className="mt-2 text-2xl font-bold tracking-tight">
+        <h3 className="mt-2 text-center text-2xl font-bold tracking-tight sm:text-left">
           Example of one overtime round
         </h3>
         <ul className="max-w-xl list-disc text-sm leading-6 lg:max-w-lg">
@@ -132,8 +134,8 @@ export const EbiRuleset = (): JSX.Element => {
           </span>
         </p>
         <div>
-          <h3 className="max-w-xl list-disc text-sm leading-6 lg:max-w-lg">
-            Offense options:
+          <h3 className="mt-2 text-center text-2xl font-bold tracking-tight sm:text-left">
+            Offense options
           </h3>
           The competitor on offense gets to choose if they want to start in back
           control or armbar.
@@ -226,7 +228,7 @@ export const EbiRuleset = (): JSX.Element => {
         </div>
       </div>
 
-      <p className="max-w-xl list-disc text-sm leading-6 lg:max-w-lg pt-2">
+      <p className="max-w-xl list-disc pt-2 text-sm leading-6 lg:max-w-lg">
         <em>
           *These rules are subject to change at anytime before the official
           rules meeting.

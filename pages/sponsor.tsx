@@ -34,8 +34,8 @@ export default function Sponsor() {
         alt="SES Staff"
         src="/images/sesStaff.jpg"
         className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-tl-[30px] md:h-[calc(100%_-_4rem)] md:rounded-tl-[60px]"
-        width={500}
-        height={500}
+        width={1000}
+        height={1000}
         loading="lazy"
       />
     </section>
