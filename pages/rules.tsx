@@ -43,7 +43,7 @@ export default function Rules() {
           width={300}
           height={300}
           alt={"Ref Explaning Rules"}
-          className="mx-auto h-auto max-w-lg pb-10 shadow-lg dark:shadow-black/30"
+          className="mx-auto h-auto max-w-lg pb-10 dark:shadow-black/30"
         />
       </div>
     </div>

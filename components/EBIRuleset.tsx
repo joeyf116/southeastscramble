@@ -9,7 +9,7 @@ const EBIRuleset = () => {
       <h2 className="karantina mb-4 font-karantina text-4xl font-bold">
         (EBI Rules)
       </h2>
-      <div className="rounded-lg bg-neutral-900 p-4 shadow-md">
+      <div className="rounded-lg bg-neutral-800 p-4 shadow-lg">
         <h3 className="mb-2 font-karantina text-4xl">Format</h3>
         <ul className="mb-4 ml-6 list-disc">
           <li>No points, no judges, submission only</li>
