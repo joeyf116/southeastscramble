@@ -12,7 +12,7 @@ const contrailOne = Contrail_One({ subsets: ["latin"], weight: ["400"] });
 
 export default function Rules() {
   return (
-    <div className="relative grid grid-cols-2 gap-4 pb-20 pt-28 xl:grid-cols-3">
+    <div className="relative grid grid-cols-2 gap-4 xl:grid-cols-3">
       <div className="col-span-2">
         <EbiRuleset />
       </div>

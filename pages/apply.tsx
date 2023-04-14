@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Apply() {
   return (
-    <div className="m-auto bg-neutral-900 pb-20 pt-28 lg:pt-44">
+    <div className="m-auto bg-neutral-900 lg:pt-44">
       <Image
         src="/images/scrambleppi4x.png"
         height={350}

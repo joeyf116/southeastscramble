@@ -14,7 +14,7 @@ const contrailOne = Contrail_One({ subsets: ["latin"], weight: ["400"] });
 export default function Home() {
   return (
     <>
-      <div className="relative bg-neutral-900 pb-20 pt-40 lg:pt-44">
+      <div className="relative bg-neutral-900">
         <div className="relative m-auto px-6 xl:container md:px-12 lg:px-6">
           <h1 className="text-center text-5xl font-black text-white sm:mx-auto sm:text-5xl md:w-2/3 md:text-5xl lg:w-auto lg:text-left xl:text-7xl">
             <span className={karantina.className}>EBI Rules. Cash Prize.</span>{" "}

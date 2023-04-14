@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Sponsor() {
   return (
-    <section className="overflow-hidden bg-neutral-900 pt-28 sm:grid sm:grid-cols-2 sm:items-center">
+    <section className="overflow-hidden bg-neutral-900 sm:grid sm:grid-cols-2 sm:items-center">
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">
         <div className="mx-auto max-w-xl text-center sm:text-left">
           <h2
