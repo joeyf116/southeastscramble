@@ -15,6 +15,9 @@ module.exports = {
       colors: {
         ses: { 950: "#03ff38" },
       },
+      fontFamily: {
+        karantina: ["Karantina", "sans-serif"],
+      },
     },
   },
   plugins: [],
