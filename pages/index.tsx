@@ -72,14 +72,14 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="-right-10 mt-12 md:mt-0 lg:absolute lg:w-7/12">
+            <div className="p-6 md:mt-0 lg:w-4/12 md:p-0">
               <div className="relative w-full">
                 <Image
-                  src="/SVG/brand/HorizontalTextDark.svg"
+                  src="/images/spinning.svg"
                   className="relative w-full invert"
                   alt="wath illustration"
-                  width="500"
-                  height="500"
+                  width="300"
+                  height="300"
                 />
               </div>
             </div>
