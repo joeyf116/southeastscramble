@@ -2,7 +2,7 @@ import React from "react";
 
 const EBIRuleset = () => {
   return (
-    <div className="container mx-auto px-4 py-8 text-white">
+    <div className="container mx-auto px-4 pb-6 text-white">
       <h2 className="karantina mb-4 font-karantina text-6xl font-bold">
         SES Official Ruleset
       </h2>
