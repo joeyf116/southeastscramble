@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <div className="relative bg-neutral-900">
-        <div className="relative m-auto px-6 xl:container md:px-12 lg:px-6">
+        <div className="relative m-auto px-0 xl:container md:px-12 lg:px-6">
           <h1 className="text-center text-5xl font-black text-white sm:mx-auto sm:text-5xl md:w-2/3 md:text-5xl lg:w-auto lg:text-left xl:text-7xl">
             <span className={karantina.className}>EBI Rules. Cash Prize.</span>{" "}
             <br className="block" />{" "}
@@ -33,7 +33,7 @@ export default function Home() {
               </span>
               <HeaderHero />
 
-              <div className="flex justify-between gap-6 pt-12 grayscale lg:w-2/3 lg:gap-12">
+              <div className="flex justify-between gap-6 px-6 pt-6 grayscale lg:w-2/3 lg:gap-12">
                 <a href="https://www.10thplanetgreenville.com/" target="_blank">
                   <Image
                     src="/SVG/brand/10pgvl.svg"
