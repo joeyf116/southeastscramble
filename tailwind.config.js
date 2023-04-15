@@ -17,6 +17,7 @@ module.exports = {
       },
       fontFamily: {
         karantina: ["Karantina", "sans-serif"],
+        contrail: ["Contrail One", "sans-serif"],
       },
     },
   },

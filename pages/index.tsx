@@ -28,7 +28,7 @@ export default function Home() {
           </h1>
           <div className="lg:flex">
             <div className="relative mt-6 space-y-8 text-center sm:mx-auto sm:w-10/12 md:mt-6 md:w-2/3 lg:ml-0 lg:mr-auto lg:w-7/12 lg:text-left">
-              <span className="block font-semibold text-gray-500 dark:text-gray-400">
+              <span className="block font-contrail text-gray-500 dark:text-gray-400">
                 Bringing the top Jiu Jitsu talent in the Southeast.
               </span>
               <HeaderHero />
@@ -72,7 +72,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="px-24 pt-12 pb-12 md:mt-0 lg:w-4/12 md:p-0">
+            <div className="px-24 pb-12 pt-12 md:mt-0 md:p-0 lg:w-4/12">
               <div className="relative w-full">
                 <Image
                   src="/images/spinning.svg"
