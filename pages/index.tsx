@@ -72,7 +72,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="p-6 md:mt-0 lg:w-4/12 md:p-0">
+            <div className="px-24 pt-12 pb-12 md:mt-0 lg:w-4/12 md:p-0">
               <div className="relative w-full">
                 <Image
                   src="/images/spinning.svg"
