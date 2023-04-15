@@ -24,7 +24,7 @@ export default function Events() {
             understands the challenges and rewards of training and competing in
             Jiu Jitsu. His goal is to provide a platform for talented athletes
             to showcase their skills and to foster a positive and supportive
-            environment for all competitors. Whether you're a seasoned
+            environment for all competitors. Whether you&apos;re a seasoned
             competitor or looking to break into the professional scene, come
             join us and test your skills against some of the best grapplers in
             the Southeast!
