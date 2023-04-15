@@ -6,7 +6,7 @@ export default function Events() {
       <div className="lg:py-18 p-8 md:p-12 lg:px-16">
         <div className="mx-auto max-w-xl text-center sm:text-left">
           <h2 className="font-karantina text-5xl font-bold tracking-tight text-white">
-            <span className="bg-gradient-to-r from-ses-950 to-green-800 bg-clip-text text-6xl text-transparent dark:from-ses-950 dark:to-green-900 lg:text-7xl">
+            <span className="bg-gradient-to-r from-ses-950 to-green-800 bg-clip-text text-4xl text-transparent dark:from-ses-950 dark:to-green-900 lg:text-7xl">
               Southeast Scramble
             </span>
           </h2>
