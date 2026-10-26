@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ses: #03ff38;
+  --color-ses-dim: #15803d;
+  --font-display: "Karantina", "Impact", sans-serif;
+  --font-accent: "Contrail One", sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-neutral-950 font-sans text-neutral-200 antialiased;
+  }
+  ::selection {
+    @apply bg-ses text-neutral-950;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ses;
+  }
+}
+
+@utility text-gradient {
+  @apply bg-gradient-to-r from-ses to-ses-dim bg-clip-text text-transparent;
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold tracking-wide uppercase transition duration-200;
+}
+
+@utility btn-primary {
+  @apply btn bg-ses text-neutral-950 shadow-[0_0_30px_-8px] shadow-ses/70 hover:-translate-y-0.5 hover:bg-white;
+}
+
+@utility btn-ghost {
+  @apply btn border border-white/20 text-white hover:border-ses hover:text-ses;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 40s linear infinite;
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
